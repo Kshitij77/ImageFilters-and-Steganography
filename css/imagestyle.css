@@ -1,0 +1,23 @@
+body {
+    font-family: 'Sofia';
+    text-align: center;
+    background-image: url('img/grid.jpg');
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+canvas {
+    border: 2px black solid;
+    height: 300px;
+    width: 400px;
+}
+input{
+         font-family: 'Sofia';
+     font-size: 18px;
+}
+button{
+         font-family: 'Sofia';
+     font-size: 18px;
+}
