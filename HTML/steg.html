@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+        <title>IMG Filter App</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="imagestyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Poppins:ital,wght@1,600&family=Sofia&display=swap" rel="stylesheet">
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <script src="imagescript.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                        <div class="panel-heading  color">
+                            <h3 style="color:orange;font-family: 'Sofia'">Steganography</h3>
+                        </div>
+                    <div class="panel-body">
+                        <div class="col-sm-4 home-feature">
+                             <canvas id="can"></canvas> <br />
+                              <h2>To hide</h2>
+                              <input type="file" id="finput" multiple="false" accept="image/*" onchange="upload()" />    
+                        </div>
+                        <div class="col-sm-4 home-feature">
+                             <canvas id="can1"></canvas> <br />
+                             <h2>In this</h2>
+                              <input type="file" id="finput1" multiple="false" accept="image/*" onchange="upload1()" />                            
+                        </div>
+                        <div class="col-sm-4 home-feature">
+                              <canvas id="can2"></canvas> <br />
+                              <h2>Result</h2>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="Combine" onclick="hide = cropImage(hide, start.getWidth(), start.getHeight());
+start = chopToHide(start);
+hide = shift(hide);
+var ans = combine(start, hide);
+
+canvas2 = document.getElementById('can2');
+ans.drawTo(canvas2);" /><br><br>
+        
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                        <div class="panel-heading  color">
+                            <h3 style="color:orange;font-family: 'Sofia'">Steganograph Extractor</h3>
+                        </div>
+                    <div class="panel-body">
+                        <div class="col-sm-6 home-feature">
+                             <canvas id="can3"></canvas> <br />
+                             <h2>Extract From</h2>
+                              <input type="file" id="finput2" multiple="false" accept="image/*" onchange="upload2()" />                            
+                        </div>
+                        <div class="col-sm-6 home-feature">
+                              <canvas id="can4"></canvas> <br />
+                              <h2>Result</h2>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+ <input type="button" value="Extract" onclick="var ext = test_extract(fromImage);
+        canvas4 = document.getElementById('can4');
+ext.drawTo(canvas4);" />
+ <br><br>              
+    </body>
+</html>
