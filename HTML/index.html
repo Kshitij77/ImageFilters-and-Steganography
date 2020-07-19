@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <title>IMG Filter App</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="imagestyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Poppins:ital,wght@1,600&family=Sofia&display=swap" rel="stylesheet">
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <script src="imagescript.js"></script>
+    </head>
+
+    <body>
+        <h1>Image Filter</h1>
+        <canvas id="can"></canvas> <br />
+        
+        <h2>Place memories here</h2>
+        <input type="file" id="finput" multiple="false" accept="image/*" onchange="upload()" />
+        
+        <h2>Remember them how you want</h2>
+        <input type="button" value="Grayscale" onclick="grayscale()" />
+        <input type="button" value="Redhaze" onclick="redhaze()" />
+        <input type="button" value="Rainbow" onclick="rainbow()" />
+        <input type="button" value="Inversion" onclick="inversion()" />
+        <input type="button" value="Blurred" onclick="doBlur()" /> <br />
+        <button onclick="window.location='steg.html';">Steganography</button>
+        <button onclick="window.location='greenscale.html';">Green-Scale</button>
+        <input type="button" value="Reset memories" onclick="reset()" />
+    </body>
+</html>
