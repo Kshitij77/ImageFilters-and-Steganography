@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <title>IMG Filter App</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="imagestyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Poppins:ital,wght@1,600&family=Sofia&display=swap" rel="stylesheet">
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <script src="imagescript.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                        <div class="panel-heading  color">
+                            <h3 style="color:orange;font-family: 'Sofia'">Green-Scale</h3>
+                        </div>
+                    <div class="panel-body">
+                        <div class="col-sm-4 home-feature">
+                             <canvas id="can5"></canvas> <br />
+                              <h2>Foreground</h2>
+                              <input type="file" id="finput3" multiple="false" accept="image/*" onchange="upload3()" />    
+                        </div>
+                        <div class="col-sm-4 home-feature">
+                             <canvas id="can6"></canvas> <br />
+                             <h2>Background</h2>
+                              <input type="file" id="finput4" multiple="false" accept="image/*" onchange="upload4()" />                            
+                        </div>
+                        <div class="col-sm-4 home-feature">
+                              <canvas id="can7"></canvas> <br />
+                              <h2>Result</h2>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="Combine" onclick="greenscreen()" /><br><br>
+        
+                      
+    </body>
+</html>
